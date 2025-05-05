@@ -1,40 +1,79 @@
-# MT Exercise 5: Byte Pair Encoding, Beam Search
-This repository is a starting point for the 5th and final exercise. As before, fork this repo to your own account and the clone it into your prefered directory.
+ MT Exercise 4: Byte Pair Encoding, Beam Search
+
+This repository is a starting point for the 4th and final exercise. As before, fork this repo to your own account and then clone it into your preferred directory.
+
+---
 
 ## Requirements
 
-- This only works on a Unix-like system, with bash available.
-- Python 3 must be installed on your system, i.e. the command `python3` must be available
-- Make sure virtualenv is installed on your system. To install, e.g.
+- Python 3.10 must be installed. The command `python3` (or `python` on Windows) should be available from your terminal or command prompt.
+- `virtualenv` must be installed. Install it with:
 
-    `pip install virtualenv`
+  ```bash
+  pip install virtualenv
 
-## Steps
+    macOS/Linux users: No special setup needed; shell scripts should run normally.
 
-Clone your fork of this repository in the desired place:
+    Windows users: Either use Windows Subsystem for Linux (WSL) or a Unix-compatible shell like Git Bash.
+    If you're using PowerShell or Command Prompt, manual setup is required.
 
-    git clone https://github.com/[your-name]/mt-exercise-5
+Setup Instructions
+For macOS / Linux / WSL / Git Bash users
+1. Clone your fork of the repository:
 
-Create a new virtualenv that uses Python 3.10. Please make sure to run this command outside of any virtual Python environment:
+git clone https://github.com/[your-username]/mt-exercise-4
+cd mt-exercise-4
 
-    ./scripts/make_virtualenv.sh
+2. Create a virtual environment:
 
-**Important**: Then activate the env by executing the `source` command that is output by the shell script above.
+./scripts/make_virtualenv.sh
 
-Download and install required software as described in the exercise pdf.
+    🔹 Important: After running the script, activate the environment using the source command shown at the end. Usually:
 
-Download data:
+source mt_env/bin/activate
 
-    ./download_iwslt_2017_data.sh
-    
-Before executing any further steps, you need to make the modifications described in the exercise pdf.
+3. Install required dependencies
 
-Train a model:
+Follow the instructions provided in the exercise PDF.
+4. Download data:
 
-    ./scripts/train.sh
+./download_iwslt_2017_data.sh
 
-The training process can be interrupted at any time, and the best checkpoint will always be saved.
+5. Modify the codebase
 
-Evaluate a trained model with
+Make the changes described in the exercise PDF.
+6. Train the model:
 
-    ./scripts/evaluate.sh
+./scripts/train.sh
+
+    The training process can be interrupted at any time. The best checkpoint will always be saved automatically.
+
+7. Evaluate the model:
+
+./scripts/evaluate.sh
+
+For Windows (Command Prompt / PowerShell users)
+1. Manually create and activate a virtual environment:
+
+python -m venv mt_env
+mt_env\Scripts\activate
+
+    ⚠ Note: The make_virtualenv.sh script will not work in native Windows shells.
+
+2. Manually download the dataset
+
+Open the download_iwslt_2017_data.sh file in a text editor and run the commands one-by-one in your shell.
+Alternatively, use Git Bash or WSL to run it directly.
+3. Modify, train, and evaluate
+
+Once setup is complete, use the instructions in the exercise PDF to run training and evaluation (either by adapting the .sh scripts manually, or by using Git Bash/WSL).
+Notes for Windows Users
+
+    Using Git Bash or WSL is highly recommended for compatibility.
+
+    If using native PowerShell or Command Prompt:
+
+        Manual recreation of shell script steps will be necessary.
+
+        Always activate your virtual environment before running any training or evaluation steps.
+
