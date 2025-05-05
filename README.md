@@ -12,10 +12,10 @@ This repository is a starting point for the 4th and final exercise. As before, f
   ```bash
   pip install virtualenv
 
-    macOS/Linux users: No special setup needed; shell scripts should run normally.
+macOS/Linux users: No special setup needed; shell scripts should run normally.
 
-    Windows users: Either use Windows Subsystem for Linux (WSL) or a Unix-compatible shell like Git Bash.
-    If you're using PowerShell or Command Prompt, manual setup is required.
+Windows users: Either use Windows Subsystem for Linux (WSL) or a Unix-compatible shell like Git Bash.
+If you're using PowerShell or Command Prompt, manual setup is required.
 
 Setup Instructions
 For macOS / Linux / WSL / Git Bash users
