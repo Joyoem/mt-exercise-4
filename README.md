@@ -27,7 +27,8 @@ Clone your fork of the repository:
    cd mt-exercise-4 
 
 
-# Create a virtual environment:
+Create a virtual environment:
+
    ```
     ./scripts/make_virtualenv.sh
 
