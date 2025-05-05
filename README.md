@@ -20,60 +20,63 @@ If you're using PowerShell or Command Prompt, manual setup is required.
 Setup Instructions
 For macOS / Linux / WSL / Git Bash users
 1. Clone your fork of the repository:
-
-git clone https://github.com/[your-username]/mt-exercise-4
-cd mt-exercise-4
+   ```
+   git clone https://github.com/[your-username]/mt-exercise-4
+   cd mt-exercise-4 
 
 2. Create a virtual environment:
+   ```
+    ./scripts/make_virtualenv.sh
 
-./scripts/make_virtualenv.sh
+ Important: After running the script, activate the environment using the source command shown at the end. Usually:
 
-    🔹 Important: After running the script, activate the environment using the source command shown at the end. Usually:
-
-source mt_env/bin/activate
+    source mt_env/bin/activate
 
 3. Install required dependencies
 
 Follow the instructions provided in the exercise PDF.
 4. Download data:
 
-./download_iwslt_2017_data.sh
+    ./download_iwslt_2017_data.sh
 
 5. Modify the codebase
 
 Make the changes described in the exercise PDF.
+
 6. Train the model:
 
-./scripts/train.sh
+       ./scripts/train.sh
 
-    The training process can be interrupted at any time. The best checkpoint will always be saved automatically.
+*the training process can be interrupted at any time. The best checkpoint will always be saved automatically.
 
 7. Evaluate the model:
 
-./scripts/evaluate.sh
+       ./scripts/evaluate.sh
 
 For Windows (Command Prompt / PowerShell users)
 1. Manually create and activate a virtual environment:
 
-python -m venv mt_env
-mt_env\Scripts\activate
+        python -m venv mt_env
+        mt_env\Scripts\activate
 
-    ⚠ Note: The make_virtualenv.sh script will not work in native Windows shells.
+Note: The make_virtualenv.sh script will not work in native Windows shells.
 
 2. Manually download the dataset
 
 Open the download_iwslt_2017_data.sh file in a text editor and run the commands one-by-one in your shell.
 Alternatively, use Git Bash or WSL to run it directly.
+
 3. Modify, train, and evaluate
 
 Once setup is complete, use the instructions in the exercise PDF to run training and evaluation (either by adapting the .sh scripts manually, or by using Git Bash/WSL).
-Notes for Windows Users
 
-    Using Git Bash or WSL is highly recommended for compatibility.
+#### Notes for Windows Users
 
-    If using native PowerShell or Command Prompt:
+  Using Git Bash or WSL is highly recommended for compatibility.
 
-        Manual recreation of shell script steps will be necessary.
+  If using native PowerShell or Command Prompt:
 
-        Always activate your virtual environment before running any training or evaluation steps.
+  Manual recreation of shell script steps will be necessary.
+
+  Always activate your virtual environment before running any training or evaluation steps.
 
