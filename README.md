@@ -21,13 +21,10 @@ If you're using PowerShell or Command Prompt, manual setup is required.
 
 #### For macOS / Linux / WSL / Git Bash users
 
-Clone your fork of the repository:
+Clone your fork of the repository + Create a virtual environment:
    ```
    git clone https://github.com/[your-username]/mt-exercise-4
    cd mt-exercise-4 
-
-
-Create a virtual environment:
 
    ```
     ./scripts/make_virtualenv.sh
