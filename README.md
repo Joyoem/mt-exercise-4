@@ -19,7 +19,7 @@ If you're using PowerShell or Command Prompt, manual setup is required.
 
 ### Setup Instructions
 
-#### For macOS / Linux / WSL / Git Bash users
+## For macOS / Linux / WSL / Git Bash users
 
 Clone your fork of the repository + Create a virtual environment:
    ```
@@ -48,7 +48,7 @@ Evaluate the model:
 
        ./scripts/evaluate.sh
 
-#### For Windows (Command Prompt / PowerShell users)
+## For Windows (Command Prompt / PowerShell users)
 Manually create and activate a virtual environment:
 
         python -m venv mt_env
