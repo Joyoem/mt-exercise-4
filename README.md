@@ -1,4 +1,4 @@
- MT Exercise 4: Byte Pair Encoding, Beam Search
+# MT Exercise 4: Byte Pair Encoding, Beam Search
 
 This repository is a starting point for the 4th and final exercise. As before, fork this repo to your own account and then clone it into your preferred directory.
 
