@@ -28,9 +28,7 @@ For macOS / Linux / WSL / Git Bash users
    ```
     ./scripts/make_virtualenv.sh
 
- Important: After running the script, activate the environment using the source command shown at the end. Usually:
-
-    source mt_env/bin/activate
+Important: Then activate the env by executing the source command that is output by the shell script above.
 
 3. Install required dependencies
 
