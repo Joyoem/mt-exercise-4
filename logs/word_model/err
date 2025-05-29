@@ -1,0 +1,119 @@
+2025-05-18 21:15:46,548 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                           cfg.name : word_level_transformer
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                cfg.joeynmt_version : 2.0.0
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                     cfg.data.train : data/train.tok
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                       cfg.data.dev : data/dev.tok
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                      cfg.data.test : data/test.tok
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -              cfg.data.dataset_type : plain
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                  cfg.data.src.lang : en
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                 cfg.data.src.level : word
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -             cfg.data.src.lowercase : False
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -       cfg.data.src.max_sent_length : 100
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -             cfg.data.src.voc_limit : 2000
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -              cfg.data.src.voc_file : None
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -        cfg.data.src.tokenizer_type : space
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                  cfg.data.trg.lang : de
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                 cfg.data.trg.level : word
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -             cfg.data.trg.lowercase : False
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -       cfg.data.trg.max_sent_length : 100
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -             cfg.data.trg.voc_limit : 2000
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -              cfg.data.trg.voc_file : None
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -        cfg.data.trg.tokenizer_type : space
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -              cfg.testing.beam_size : 5
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                  cfg.testing.alpha : 1.0
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -           cfg.training.random_seed : 42
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -             cfg.training.optimizer : adam
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -         cfg.training.normalization : tokens
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -         cfg.training.learning_rate : 0.0003
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -            cfg.training.batch_size : 512
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -            cfg.training.batch_type : token
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -       cfg.training.eval_batch_size : 256
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -       cfg.training.eval_batch_type : token
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -            cfg.training.scheduling : plateau
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -              cfg.training.patience : 8
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -          cfg.training.weight_decay : 0.0
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -       cfg.training.decrease_factor : 0.7
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers - cfg.training.early_stopping_metric : ppl
+2025-05-18 21:15:46,548 - INFO - joeynmt.helpers -                cfg.training.epochs : 10
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -       cfg.training.validation_freq : 250
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.training.logging_freq : 50
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -           cfg.training.eval_metric : bleu
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -             cfg.training.model_dir : models/word_model
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -             cfg.training.overwrite : True
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -               cfg.training.shuffle : True
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -              cfg.training.use_cuda : False
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -     cfg.training.max_output_length : 100
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -     cfg.training.print_valid_sents : [0, 1, 2, 3, 4]
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -       cfg.training.label_smoothing : 0.3
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -              cfg.model.initializer : xavier_uniform
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -         cfg.model.bias_initializer : zeros
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -                cfg.model.init_gain : 1.0
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -        cfg.model.embed_initializer : xavier_uniform
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.embed_init_gain : 1.0
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.tied_embeddings : False
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -             cfg.model.tied_softmax : True
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -             cfg.model.encoder.type : transformer
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -       cfg.model.encoder.num_layers : 4
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -        cfg.model.encoder.num_heads : 2
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.embedding_dim : 256
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.scale : True
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.dropout : 0
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -      cfg.model.encoder.hidden_size : 256
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.encoder.ff_size : 512
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.encoder.dropout : 0
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -             cfg.model.decoder.type : transformer
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -       cfg.model.decoder.num_layers : 1
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -        cfg.model.decoder.num_heads : 2
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.embedding_dim : 256
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.scale : True
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.dropout : 0
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -      cfg.model.decoder.hidden_size : 256
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.decoder.ff_size : 512
+2025-05-18 21:15:46,549 - INFO - joeynmt.helpers -          cfg.model.decoder.dropout : 0
+2025-05-18 21:15:47,852 - INFO - joeynmt.data - Building tokenizer...
+2025-05-18 21:15:47,852 - INFO - joeynmt.tokenizers - en tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-18 21:15:47,852 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-18 21:15:47,852 - INFO - joeynmt.data - Loading train set...
+2025-05-18 21:15:47,951 - INFO - joeynmt.data - Building vocabulary...
+2025-05-18 21:15:48,623 - INFO - joeynmt.data - Loading dev set...
+2025-05-18 21:15:48,625 - INFO - joeynmt.data - Loading test set...
+2025-05-18 21:15:48,626 - INFO - joeynmt.data - Data loaded.
+2025-05-18 21:15:48,626 - INFO - joeynmt.data - Train dataset: PlaintextDataset(split=train, len=100000, src_lang=en, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-18 21:15:48,626 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=888, src_lang=en, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-18 21:15:48,627 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=1568, src_lang=en, trg_lang=de, has_trg=True, random_subset=-1)
+2025-05-18 21:15:48,627 - INFO - joeynmt.data - First training example:
+	[SRC] Al Gore : Averting the climate crisis
+	[TRG] Al Gore : Die Abwendung der Klimakatastrophe
+2025-05-18 21:15:48,627 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) , (5) . (6) the (7) to (8) of (9) a
+2025-05-18 21:15:48,627 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) , (5) . (6) die (7) und (8) der (9) ist
+2025-05-18 21:15:48,627 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 2004
+2025-05-18 21:15:48,627 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 2004
+2025-05-18 21:15:48,627 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-18 21:15:48,677 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-18 21:15:48,678 - INFO - joeynmt.model - Total params: 3925248
+2025-05-18 21:15:48,678 - INFO - joeynmt.training - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=2004),
+	loss_function=XentLoss(criterion=KLDivLoss(), smoothing=0.3))
+2025-05-18 21:15:49,526 - INFO - joeynmt.builders - Adam(lr=0.0003, weight_decay=0.0, betas=(0.9, 0.999))
+/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/training.py:117: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.fp16)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 61, in <module>
+    main()
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 41, in main
+    train(cfg_file=args.config_path, skip_test=args.skip_test)
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/training.py", line 828, in train
+    trainer = TrainManager(model=model, cfg=cfg)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/training.py", line 138, in __init__
+    self.scheduler, self.scheduler_step_at = build_scheduler(
+                                             ^^^^^^^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/builders.py", line 175, in build_scheduler
+    scheduler = ReduceLROnPlateau(optimizer=optimizer, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'

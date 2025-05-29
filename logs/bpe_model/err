@@ -1,0 +1,95 @@
+2025-05-18 21:15:50,953 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                           cfg.name : bpe_transformer
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                cfg.joeynmt_version : 2.0.0
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                     cfg.data.train : data/train.bpe
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                       cfg.data.dev : data/dev.bpe
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                      cfg.data.test : data/test.bpe
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -              cfg.data.dataset_type : plain
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                  cfg.data.src.lang : en
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                 cfg.data.src.level : bpe
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -             cfg.data.src.lowercase : False
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.data.src.max_sent_length : 100
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -             cfg.data.src.voc_limit : None
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -              cfg.data.src.voc_file : data/bpe.vocab
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -        cfg.data.src.tokenizer_type : subword-nmt
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers - cfg.data.src.tokenizer_cfg.bpe_codes : data/bpe.codes
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                  cfg.data.trg.lang : de
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                 cfg.data.trg.level : bpe
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -             cfg.data.trg.lowercase : False
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.data.trg.max_sent_length : 100
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -             cfg.data.trg.voc_limit : None
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -              cfg.data.trg.voc_file : data/bpe.vocab
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -        cfg.data.trg.tokenizer_type : subword-nmt
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers - cfg.data.trg.tokenizer_cfg.bpe_codes : data/bpe.codes
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -              cfg.testing.beam_size : 5
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                  cfg.testing.alpha : 1.0
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -           cfg.training.random_seed : 42
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -             cfg.training.optimizer : adam
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -         cfg.training.normalization : tokens
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -         cfg.training.learning_rate : 0.0003
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -            cfg.training.batch_size : 512
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -            cfg.training.batch_type : token
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.training.eval_batch_size : 256
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.training.eval_batch_type : token
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -            cfg.training.scheduling : plateau
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -              cfg.training.patience : 8
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -          cfg.training.weight_decay : 0.0
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.training.decrease_factor : 0.7
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers - cfg.training.early_stopping_metric : ppl
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -                cfg.training.epochs : 10
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -       cfg.training.validation_freq : 250
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -          cfg.training.logging_freq : 50
+2025-05-18 21:15:50,953 - INFO - joeynmt.helpers -           cfg.training.eval_metric : bleu
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -             cfg.training.model_dir : models/bpe_model
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -             cfg.training.overwrite : True
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -               cfg.training.shuffle : True
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -              cfg.training.use_cuda : False
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -     cfg.training.max_output_length : 100
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -     cfg.training.print_valid_sents : [0, 1, 2, 3, 4]
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -       cfg.training.label_smoothing : 0.3
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -              cfg.model.initializer : xavier_uniform
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -         cfg.model.bias_initializer : zeros
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -                cfg.model.init_gain : 1.0
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -        cfg.model.embed_initializer : xavier_uniform
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.embed_init_gain : 1.0
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.tied_embeddings : False
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -             cfg.model.tied_softmax : True
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -             cfg.model.encoder.type : transformer
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -       cfg.model.encoder.num_layers : 4
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -        cfg.model.encoder.num_heads : 2
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.embedding_dim : 256
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.scale : True
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.encoder.embeddings.dropout : 0
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -      cfg.model.encoder.hidden_size : 256
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.encoder.ff_size : 512
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.encoder.dropout : 0
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -             cfg.model.decoder.type : transformer
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -       cfg.model.decoder.num_layers : 1
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -        cfg.model.decoder.num_heads : 2
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.embedding_dim : 256
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.scale : True
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers - cfg.model.decoder.embeddings.dropout : 0
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -      cfg.model.decoder.hidden_size : 256
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.decoder.ff_size : 512
+2025-05-18 21:15:50,954 - INFO - joeynmt.helpers -          cfg.model.decoder.dropout : 0
+2025-05-18 21:15:50,960 - INFO - joeynmt.data - Building tokenizer...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 61, in <module>
+    main()
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 41, in main
+    train(cfg_file=args.config_path, skip_test=args.skip_test)
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/training.py", line 813, in train
+    src_vocab, trg_vocab, train_data, dev_data, test_data = load_data(
+                                                            ^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/data.py", line 59, in load_data
+    tokenizer = build_tokenizer(data_cfg)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/tokenizers.py", line 380, in build_tokenizer
+    src_lang: _build_tokenizer(data_cfg["src"]),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/tokenizers.py", line 360, in _build_tokenizer
+    assert "codes" in tokenizer_cfg
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

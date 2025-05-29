@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 61, in <module>
+    main()
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/__main__.py", line 41, in main
+    train(cfg_file=args.config_path, skip_test=args.skip_test)
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/training.py", line 791, in train
+    cfg = load_config(Path(cfg_file))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/1uckyeom/Desktop/25spring/mt/joeynmt/joeynmt/helpers.py", line 171, in load_config
+    with path.open("r", encoding="utf-8") as ymlfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'scripts/../configs/configs/bpe2000_de-it_model.yaml'
