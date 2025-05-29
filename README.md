@@ -93,12 +93,14 @@ bpe6000_model.yaml: for BPE model with vocab size 6000
   - voc_limit: 2000	
   - voc_file: null	
   - tokenizer_type: space
+  - beam_size：5
 - For BPE models:
   - level: bpe
   - voc_limit: null
   - voc_file: path to manually created vocab file (data/vocab.bpe2000)
   - tokenizer_type: subword-nmt
   - tokenizer_cfg.codes: path to BPE codes (data/bpe2000.codes)
+  - beam_size：5
 2. We modified `train.sh` to accept the model name (model_name) as a command-line argument instead of hardcoding it. 
 3. `evaluate.sh`for the word-level model:
 - sets ext=tok to refer to tokenized files;
